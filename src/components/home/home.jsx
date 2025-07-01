@@ -8,7 +8,7 @@ const Home = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/movies/')
+    fetch('https://bf-platform-bk.onrender.com/movies/')
       .then(response => response.json())
       .then(data => {
         console.log("Keldi:", data); // <-- Tekshiruv uchun
@@ -38,7 +38,7 @@ const Home = () => {
           filteredItems.map((item) => (
             <div className='kino' key={item.id} id={`category-${item.category?.id}`}>
 
-              {item.movie?.startsWith("http") ? (
+              {item.movie?.startsWith("https") ? (
                 <video src={item.movie} controls controlsList="nodownload" poster='https://images.uzmovi.tv/2025-06-30/cc456b7a26c6a061aa3d6de73b194480.jpg'></video>
 
               ) : (

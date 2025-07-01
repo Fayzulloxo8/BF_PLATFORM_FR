@@ -6,7 +6,7 @@ const Nav = () => {
     const [nav, setNav] = useState([])
 
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/categories/')
+        fetch('https://bf-platform-bk.onrender.com/categories/')
             .then(response => response.json())
             .then(data => setNav(data))
             .catch(error => console.error('Hatolik', error))
