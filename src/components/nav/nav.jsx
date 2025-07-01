@@ -16,7 +16,7 @@ const Nav = () => {
         <>
             <nav>
                 <div className='logo'>
-                    <p><span>F</span>-platform.com</p>
+                    <p><span>BF</span>-platform.com</p>
                 </div>
                 <div className='nav-menu'>
                     {nav && nav.map((item, index) => (
