@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './home.scss';
 import YandexAd from '../yandexAd/yandexAd';
+import BannerAd1 from '../bannerAd1/bannerAd1';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -53,6 +54,7 @@ const Home = () => {
           <h1>Hech nima topilmadi...</h1>
         )}
       </div>
+      <BannerAd1 />
     </div>
   );
 };
