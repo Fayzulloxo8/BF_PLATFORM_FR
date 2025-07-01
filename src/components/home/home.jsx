@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './home.scss';
+import YandexAd from '../yandexAd/yandexAd';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -21,6 +22,7 @@ const Home = () => {
 
   return (
     <div className='home'>
+      <YandexAd />
       <div className='input'>
         <input
           type='text'
