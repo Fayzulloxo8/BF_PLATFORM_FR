@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Ad10 = () => {
+const YandexAd = () => {
     useEffect(() => {
         let isMounted = true;
 
