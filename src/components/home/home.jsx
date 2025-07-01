@@ -1,23 +1,6 @@
 import { useState, useEffect } from 'react';
 import './home.scss';
-
-const YandexAd = () => {
-  useEffect(() => {
-    // Har ehtimolga qarshi yaContextCb arrayi mavjudligini tekshiramiz
-    window.yaContextCb = window.yaContextCb || [];
-
-    window.yaContextCb.push(() => {
-      window.Ya?.Context?.AdvManager?.render({
-        blockId: "R-A-16091462-1",
-        renderTo: "yandex_rtb_R-A-16091462-1"
-      });
-    });
-  }, []);
-
-  return <div id="yandex_rtb_R-A-16091462-1" />;
-};
-
-
+import YandexAd from '../yandexAd/yandexAd';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
