@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import "./ad10.scss";
 
 const Ad10 = () => {
     useEffect(() => {
